@@ -1,13 +1,96 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
+	font-family: "Inter", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+#root {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.app {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.start {
+	text-align: center;
+}
+
+.start h1,
+.start p {
+	color: #293264;
+}
+
+.start button {
+	width: 195px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #4d5b9e;
+	border: none;
+	color: white;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+.question {
+	color: #293264;
+}
+.unselected {
+	border: 1px solid #4d5b9e;
+	border-radius: 7px;
+	padding: 5px 10px;
+	margin-right: 15px;
+	color: #293264;
+	background-color: white;
+	cursor: pointer;
+}
+
+.unselected:active {
+	background: #e5e5e5;
+	-webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+	-moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+	box-shadow: inset 0px 0px 5px #c1c1c1;
+	outline: none;
+}
+.selected {
+	border: 1px solid #4d5b9e;
+	border-radius: 7px;
+	padding: 5px 10px;
+	margin-right: 15px;
+	color: #293264;
+	background-color: #d6dbf5;
+	cursor: pointer;
+}
+.checkBtn {
+	margin: 10px 10px 0 0;
+	background-color: #4d5b9e;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.exitBtn {
+	margin: 10px 10px 0 0;
+	background-color: white;
+	color: #4d5b9e;
+	border: 1px solid #4d5b9e;
+	border-radius: 10px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.footer {
+	text-align: center;
 }
